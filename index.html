@@ -2,82 +2,636 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Simonyan" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
-    <meta name="description" content="Welcome to my portfolio website" />
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="Icon" href="assets/favicon.png" />
+    <title>User Portfolio</title>
   </head>
   <body>
-    <header>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
-      </svg>
-      <div class="logo">My Portfolio</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Header section -->
+    <header class="visibled-header">
+      <nav class="navigation flex">
+        <a href="#">
+          <img src="assets/Dark mode/site_logo.png" alt="Website Icon" />
+        </a>
+        <div class="box flex">
+          <ul class="flex">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="reversed-divider"></div>
+          <div class="container">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 9C16.8065 10.1935 16.136 11.8122 16.136 13.5C16.136 15.1878 16.8065 16.8065 18 18C19.1935 19.1935 20.8122 19.864 22.5 19.864C24.1878 19.864 25.8065 19.1935 27 18C27 19.78 26.4722 21.5201 25.4832 23.0001C24.4943 24.4802 23.0887 25.6337 21.4442 26.3149C19.7996 26.9961 17.99 27.1743 16.2442 26.8271C14.4984 26.4798 12.8947 25.6226 11.636 24.364C10.3774 23.1053 9.5202 21.5016 9.17294 19.7558C8.82567 18.01 9.0039 16.2004 9.68509 14.5558C10.3663 12.9113 11.5198 11.5057 12.9999 10.5168C14.4799 9.52784 16.22 9 18 9Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M25 9V13" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27 11H23" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <button>Download CV</button>
+          </div>
+        </div>
       </nav>
-      <button>Get in Touch</button>
-      <a href="/articles/CV_Lyova_Simonyan.pdf" download>
-        <button type="button">Download Resume</button>
-      </a>
     </header>
-    <main>
-      <section id="introduction">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is a brief introduction to my portfolio website.</p>
-      </section>
-      <section id="about-me">
-        <article>
-          <h2>About Me</h2>
-          <img src="" alt="A picture of me" />
-          <p>Hello, I am Lyova, a Front-end developer.</p>
-        </article>
-      </section>
-      <section id="projects">
-        <article>
-          <h2>Projects</h2>
-          <img src="images/136186_1000x1000_500.jpg" width="250px" alt="Project 1" />
-          <p><strong>Project 1:</strong> Description of project 1. <a href="index.html">Read more</a></p>
-        </article>
-        <article>
-          <h2>Projects</h2>
-          <img src="images/5025.jpg" width="250px" alt="Project 2" />
-          <p><strong>Project 2:</strong> Description of project 2. <a href="index.html">Read more</a></p>
-        </article>
-        <article>
-          <h2>Projects</h2>
-          <img src="images/designed-to-sell-3-mobile-500w.jpg" width="250px" alt="Project 3" />
-          <p><strong>Project 3:</strong> Description of project 3. <a href="index.html">Read more</a></p>
-        </article>
-      </section>
-      <section id="testimonials">
-        <h2>Testimonials</h2>
-        <blockquote>
-          <p>"[Quote from a testimonial]"</p>
-        </blockquote>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <p>Here are some of my skills.</p>
-      </section>
-    </main>
-    <footer>
-      <address>
-        <p>Contact me at: <a href="mailto:email@example.com">email@example.com</a></p>
-        <p>Call me at: <a href="tel:+37477000000">+37477000000</a></p>
-      </address>
+    <!-- Introduction section -->
+    <section class="introduction-container centered-section flex">
       <div>
-        <a href="#">Resource 1</a>
-        <a href="#">Resource 2</a>
+        <div class="introduction-description">
+          <h1 class="introduction-title">Hi, I'm User <span class="wave-animation">👋</span></h1>
+          <span class="introduction-info">
+            I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that
+            are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love
+            it as if it was something new.
+          </span>
+        </div>
+        <div class="introduction-location">
+          <p class="flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Yerevan, Armenia
+          </p>
+          <p class="flex">
+            <svg width="24" height="24" class="pulse" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="8" height="8" rx="4" fill="#10B981" />
+            </svg>
+            Available for new projects
+          </p>
+        </div>
+        <div class="introduction-social-media">
+          <a target="_blank" href="https://github.com/">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8.00004 3.5C6.00004 2 5.00004 2 5.00004 2C4.70004 3.15 4.70004 4.35 5.00004 5.5C4.27191 6.51588 3.91851 7.75279 4.00004 9C4.00004 12.5 7.00004 14.5 10 14.5C9.61004 14.99 9.32004 15.55 9.15004 16.15C8.98004 16.75 8.93004 17.38 9.00004 18V22"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M9 18C4.49 20 4 16 2 16" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a target="_blank" href="https://x.com/">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 4.00002C22 4.00002 21.3 6.10002 20 7.40002C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.60002 3 5.00002C5.2 7.60002 8.6 9.10002 12 9.00002C11.1 4.80002 16 2.40002 19 5.20002C20.1 5.20002 22 4.00002 22 4.00002Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.figma.com">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 5.5C5 4.57174 5.36875 3.6815 6.02513 3.02513C6.6815 2.36875 7.57174 2 8.5 2H12V9H8.5C7.57174 9 6.6815 8.63125 6.02513 7.97487C5.36875 7.3185 5 6.42826 5 5.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M12 2H15.5C15.9596 2 16.4148 2.09053 16.8394 2.26642C17.264 2.44231 17.6499 2.70012 17.9749 3.02513C18.2999 3.35013 18.5577 3.73597 18.7336 4.16061C18.9095 4.58525 19 5.04037 19 5.5C19 5.95963 18.9095 6.41475 18.7336 6.83939C18.5577 7.26403 18.2999 7.64987 17.9749 7.97487C17.6499 8.29988 17.264 8.55769 16.8394 8.73358C16.4148 8.90947 15.9596 9 15.5 9H12V2Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M12 12.5C12 12.0404 12.0905 11.5852 12.2664 11.1606C12.4423 10.736 12.7001 10.3501 13.0251 10.0251C13.3501 9.70012 13.736 9.44231 14.1606 9.26642C14.5852 9.09053 15.0404 9 15.5 9C15.9596 9 16.4148 9.09053 16.8394 9.26642C17.264 9.44231 17.6499 9.70012 17.9749 10.0251C18.2999 10.3501 18.5577 10.736 18.7336 11.1606C18.9095 11.5852 19 12.0404 19 12.5C19 12.9596 18.9095 13.4148 18.7336 13.8394C18.5577 14.264 18.2999 14.6499 17.9749 14.9749C17.6499 15.2999 17.264 15.5577 16.8394 15.7336C16.4148 15.9095 15.9596 16 15.5 16C15.0404 16 14.5852 15.9095 14.1606 15.7336C13.736 15.5577 13.3501 15.2999 13.0251 14.9749C12.7001 14.6499 12.4423 14.264 12.2664 13.8394C12.0905 13.4148 12 12.9596 12 12.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 19.5C5 18.5717 5.36875 17.6815 6.02513 17.0251C6.6815 16.3687 7.57174 16 8.5 16H12V19.5C12 20.4283 11.6313 21.3185 10.9749 21.9749C10.3185 22.6313 9.42826 23 8.5 23C7.57174 23 6.6815 22.6313 6.02513 21.9749C5.36875 21.3185 5 20.4283 5 19.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.5C5 11.5717 5.36875 10.6815 6.02513 10.0251C6.6815 9.36875 7.57174 9 8.5 9H12V16H8.5C7.57174 16 6.6815 15.6313 6.02513 14.9749C5.36875 14.3185 5 13.4283 5 12.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
       </div>
+      <span class="introduction-img-container">
+        <img src="assets/Dark mode/small-picture.png" alt="Main small image" />
+      </span>
+    </section>
+    <!-- Main section (about user) -->
+    <main class="about-container main-container flex">
+      <span id="about" class="title button-box">
+        <a href="#about">
+          <button>About me</button>
+        </a>
+      </span>
+      <div class="image-section">
+        <img src="assets/Dark mode/big-picture.png" alt="Profile Image" />
+      </div>
+      <div class="content-section">
+        <h1>Curious about me? Here you have it:</h1>
+        <p>
+          I'm a passionate, <a href="#">self-proclaimed designer</a> who specializes in full stack development (React.js & Node.js). I am very
+          enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing
+          clear, readable, highly performant code matters to me.
+        </p>
+        <p>
+          I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges
+          and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm
+          building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+        </p>
+        <p>I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.</p>
+        <p>
+          When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early
+          startups or enjoying some free time. You can follow me on <a href="#">Twitter</a> where I share tech-related bites and build in public, or
+          you can follow me on <a href="#">GitHub</a>.
+        </p>
+        <p>Finally, some quick bits about me.</p>
+        <div class="checklist flex">
+          <ul>
+            <li>B.E. in Computer Engineering</li>
+            <li>Full time freelancer</li>
+          </ul>
+          <ul>
+            <li>Avid learner</li>
+            <li>Aspiring indie hacker</li>
+          </ul>
+        </div>
+        <p>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite <span>😉</span></p>
+      </div>
+    </main>
+    <!-- Section of Skills  -->
+    <section class="skill-container main-container">
+      <span id="skill" class="title">
+        <a href="#skill">
+          <button>Skills</button>
+        </a>
+        <span>The skills, tools and technologies I am really good at:</span>
+      </span>
+      <div class="skills-section centered-section flex">
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-javscript.png " alt="Javascript" />
+          <p>Javascript</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-typescript.png" alt="Typescript" />
+          <p>Typescript</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-react.png" alt="React.js" />
+          <p>React</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-nextjs.png" alt="Next.js" />
+          <p>Next.js</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-nodejs.png" alt="Node.js" />
+          <p>Node.js</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Dark mode/icon-express.png" alt="Express.js" />
+          <p>Express.js</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-nest.png" alt="Nest.js" />
+          <p>Nest.js</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Dark mode/icon-socket.png" alt="Socket.io" />
+          <p>Socket.io</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-postgresql.png" alt="PostgreSQL" />
+          <p>PostgreSQL</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-mongodb.png" alt="MongoDB" />
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-sass.png" alt="Sass/Scss" />
+          <p>Sass/Scss</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-tailwindcss.png" alt="Tailwind CSS" />
+          <p>Tailwindcss</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-figma.png" alt="Figma" />
+          <p>Figma</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Dark mode/icon-cypress.png" alt="Cypress" />
+          <p>Cypress</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-storybook.png" alt="Storybook" />
+          <p>Storybook</p>
+        </div>
+        <div class="skill-item title">
+          <img src="assets/Same assets/icon-git.png" alt="Git" />
+          <p>Git</p>
+        </div>
+      </div>
+    </section>
+    <!-- Section of UX -->
+    <article class="experience-container main-container">
+      <div class="experience-section">
+        <span id="experience" class="title">
+          <a href="#experience">
+            <button>Experience</button>
+          </a>
+          <span>Here is a quick summary of my most recent experiences:</span>
+        </span>
+        <div class="work-experience flex">
+          <div class="card flex">
+            <img src="assets/Same assets/logo-upwork.png" alt="Upwork logo" />
+            <div class="container flex">
+              <span class="job-title">Sr. Frontend Developer</span>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+                <li>Sed quis justo ac magna.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              </ul>
+            </div>
+            <span>Nov 2021 - Present</span>
+          </div>
+          <div class="card flex">
+            <img src="assets/Same assets/logo-upwork.png" alt="Upwork logo" />
+            <div class="container flex">
+              <span class="job-title">Team Lead</span>
+              <ul>
+                <li>Sed quis justo ac magna.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed quis justo ac magna.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              </ul>
+            </div>
+            <span>Jul 2017 - Oct 2021</span>
+          </div>
+          <div class="card flex">
+            <img src="assets/Same assets/logo-upwork.png" alt="Upwork logo" />
+            <div class="container flex">
+              <span class="job-title">Full Stack Developer</span>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              </ul>
+            </div>
+            <span>Dec 2015 - May 2017</span>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Section of Projects -->
+    <section class="main-container">
+      <span id="work" class="title">
+        <a href="#work">
+          <button>Work</button>
+        </a>
+        <span>Some of the noteworthy projects I have built:</span>
+      </span>
+      <section class="project-section centered-section">
+        <!-- First Project -->
+        <div class="project-item flex">
+          <div class="image-section">
+            <img src="assets/Same assets/project-img.png" alt="Project Image" />
+          </div>
+          <article>
+            <h4>Fiskil</h4>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia curae.
+            </span>
+            <div class="project-skills">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Typescript</span>
+              <span>Nest.js</span>
+              <span>PostgreSQL</span>
+              <span>Tailwindcss</span>
+              <span>Figma</span>
+              <span>Cypress</span>
+              <span>Storybook</span>
+              <span>Git</span>
+            </div>
+            <span class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </article>
+        </div>
+        <!-- Second Project -->
+        <div class="project-item flex">
+          <article>
+            <h4>Fiskil</h4>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia curae.
+            </span>
+            <div class="project-skills">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Typescript</span>
+              <span>Nest.js</span>
+              <span>PostgreSQL</span>
+              <span>Tailwindcss</span>
+              <span>Figma</span>
+              <span>Cypress</span>
+              <span>Storybook</span>
+              <span>Git</span>
+            </div>
+            <span class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </article>
+          <div class="image-section">
+            <img src="assets/Same assets/project-img.png" alt="Project Image" />
+          </div>
+        </div>
+        <!-- Third Project -->
+        <div class="project-item flex">
+          <div class="image-section">
+            <img src="assets/Same assets/project-img.png" alt="Project Image" />
+          </div>
+          <article>
+            <h4>Fiskil</h4>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia curae.
+            </span>
+            <div class="project-skills">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Typescript</span>
+              <span>Nest.js</span>
+              <span>PostgreSQL</span>
+              <span>Tailwindcss</span>
+              <span>Figma</span>
+              <span>Cypress</span>
+              <span>Storybook</span>
+              <span>Git</span>
+            </div>
+            <span class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 3H21V9" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 14L21 3" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </article>
+        </div>
+      </section>
+    </section>
+    <!-- Section of Testimonials -->
+    <section class="testimonials main-container">
+      <span id="testimonials" class="title">
+        <a href="#testimonials">
+          <button>Testimonials</button>
+        </a>
+        <span>Nice things people have said about me:</span>
+      </span>
+      <section class="card-container flex">
+        <!-- Testimonial 1 -->
+        <div class="card-item flex">
+          <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.666748" width="64" height="64" rx="32" fill="#9CA3AF" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M25.1667 22C25.1667 20.0109 25.9569 18.1032 27.3634 16.6967C28.77 15.2902 30.6776 14.5 32.6667 14.5C34.6559 14.5 36.5635 15.2902 37.97 16.6967C39.3766 18.1032 40.1667 20.0109 40.1667 22C40.1667 23.9891 39.3766 25.8968 37.97 27.3033C36.5635 28.7098 34.6559 29.5 32.6667 29.5C30.6776 29.5 28.77 28.7098 27.3634 27.3033C25.9569 25.8968 25.1667 23.9891 25.1667 22ZM18.9184 45.5083C18.9746 41.8991 20.4478 38.4568 23.02 35.9243C25.5922 33.3918 29.0571 31.9724 32.6667 31.9724C36.2764 31.9724 39.7413 33.3918 42.3135 35.9243C44.8857 38.4568 46.3589 41.8991 46.4151 45.5083C46.4194 45.7513 46.3528 45.9903 46.2235 46.196C46.0941 46.4017 45.9076 46.5653 45.6867 46.6667C41.602 48.5395 37.1603 49.5061 32.6667 49.5C28.0234 49.5 23.6117 48.4867 19.6467 46.6667C19.4259 46.5653 19.2394 46.4017 19.11 46.196C18.9807 45.9903 18.9141 45.7513 18.9184 45.5083Z"
+              fill="black" />
+          </svg>
+          <p>
+            “Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for
+            Frontend development.”
+          </p>
+          <span class="text-section">
+            <span>John Doe</span>
+            <p>Founder - xyz.com</p>
+          </span>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="card-item flex">
+          <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.666748" width="64" height="64" rx="32" fill="#9CA3AF" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M25.1667 22C25.1667 20.0109 25.9569 18.1032 27.3634 16.6967C28.77 15.2902 30.6776 14.5 32.6667 14.5C34.6559 14.5 36.5635 15.2902 37.97 16.6967C39.3766 18.1032 40.1667 20.0109 40.1667 22C40.1667 23.9891 39.3766 25.8968 37.97 27.3033C36.5635 28.7098 34.6559 29.5 32.6667 29.5C30.6776 29.5 28.77 28.7098 27.3634 27.3033C25.9569 25.8968 25.1667 23.9891 25.1667 22ZM18.9184 45.5083C18.9746 41.8991 20.4478 38.4568 23.02 35.9243C25.5922 33.3918 29.0571 31.9724 32.6667 31.9724C36.2764 31.9724 39.7413 33.3918 42.3135 35.9243C44.8857 38.4568 46.3589 41.8991 46.4151 45.5083C46.4194 45.7513 46.3528 45.9903 46.2235 46.196C46.0941 46.4017 45.9076 46.5653 45.6867 46.6667C41.602 48.5395 37.1603 49.5061 32.6667 49.5C28.0234 49.5 23.6117 48.4867 19.6467 46.6667C19.4259 46.5653 19.2394 46.4017 19.11 46.196C18.9807 45.9903 18.9141 45.7513 18.9184 45.5083Z"
+              fill="black" />
+          </svg>
+          <p>
+            “Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to
+            any team.”
+          </p>
+          <span class="text-section">
+            <span>John Doe</span>
+            <p>Founder - abc.com</p>
+          </span>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="card-item flex">
+          <div>
+            <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.666748" width="64" height="64" rx="32" fill="#9CA3AF" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M25.1667 22C25.1667 20.0109 25.9569 18.1032 27.3634 16.6967C28.77 15.2902 30.6776 14.5 32.6667 14.5C34.6559 14.5 36.5635 15.2902 37.97 16.6967C39.3766 18.1032 40.1667 20.0109 40.1667 22C40.1667 23.9891 39.3766 25.8968 37.97 27.3033C36.5635 28.7098 34.6559 29.5 32.6667 29.5C30.6776 29.5 28.77 28.7098 27.3634 27.3033C25.9569 25.8968 25.1667 23.9891 25.1667 22ZM18.9184 45.5083C18.9746 41.8991 20.4478 38.4568 23.02 35.9243C25.5922 33.3918 29.0571 31.9724 32.6667 31.9724C36.2764 31.9724 39.7413 33.3918 42.3135 35.9243C44.8857 38.4568 46.3589 41.8991 46.4151 45.5083C46.4194 45.7513 46.3528 45.9903 46.2235 46.196C46.0941 46.4017 45.9076 46.5653 45.6867 46.6667C41.602 48.5395 37.1603 49.5061 32.6667 49.5C28.0234 49.5 23.6117 48.4867 19.6467 46.6667C19.4259 46.5653 19.2394 46.4017 19.11 46.196C18.9807 45.9903 18.9141 45.7513 18.9184 45.5083Z"
+                fill="black" />
+            </svg>
+          </div>
+          <p>
+            “Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of
+            knowledge and was able to work on my MERN stack application without any issues.”
+          </p>
+          <span class="text-section">
+            <span>John Doe</span>
+            <p>Freelancer</p>
+          </span>
+        </div>
+      </section>
+    </section>
+    <!-- Footer section -->
+    <section class="contact-container main-container flex">
+      <span id="contact" class="title">
+        <a href="#contact">
+          <button>Get in touch</button>
+        </a>
+        <span>What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</span>
+      </span>
+      <div class="contact-section flex">
+        <div class="contact-item">
+          <span>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.6666 5.33325H5.33329C3.86053 5.33325 2.66663 6.52716 2.66663 7.99992V23.9999C2.66663 25.4727 3.86053 26.6666 5.33329 26.6666H26.6666C28.1394 26.6666 29.3333 25.4727 29.3333 23.9999V7.99992C29.3333 6.52716 28.1394 5.33325 26.6666 5.33325Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M29.3333 9.33325L17.3733 16.9333C16.9617 17.1912 16.4857 17.3279 16 17.3279C15.5142 17.3279 15.0383 17.1912 14.6266 16.9333L2.66663 9.33325"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <a target="_blank" href="mailto:example@gmail.com">example@gmail.com</a>
+          <span>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.6666 10.6667H13.3333C11.8605 10.6667 10.6666 11.8607 10.6666 13.3334V26.6667C10.6666 28.1395 11.8605 29.3334 13.3333 29.3334H26.6666C28.1394 29.3334 29.3333 28.1395 29.3333 26.6667V13.3334C29.3333 11.8607 28.1394 10.6667 26.6666 10.6667Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5.33329 21.3334C3.86663 21.3334 2.66663 20.1334 2.66663 18.6667V5.33341C2.66663 3.86675 3.86663 2.66675 5.33329 2.66675H18.6666C20.1333 2.66675 21.3333 3.86675 21.3333 5.33341"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </div>
+        <div class="contact-item">
+          <span>
+            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.8333 22.56V26.56C29.8348 26.9313 29.7587 27.2989 29.61 27.6391C29.4612 27.9793 29.243 28.2848 28.9694 28.5358C28.6958 28.7868 28.3727 28.9779 28.021 29.0969C27.6692 29.2159 27.2964 29.2601 26.9266 29.2266C22.8237 28.7808 18.8826 27.3788 15.42 25.1333C12.1984 23.0862 9.46707 20.3549 7.41995 17.1333C5.16659 13.6549 3.76428 9.69463 3.32662 5.5733C3.2933 5.20459 3.33712 4.83298 3.45529 4.48213C3.57345 4.13128 3.76338 3.80889 4.01297 3.53546C4.26257 3.26204 4.56636 3.04358 4.90501 2.894C5.24365 2.74441 5.60974 2.66698 5.97995 2.66663H9.97995C10.627 2.66026 11.2543 2.8894 11.745 3.31134C12.2356 3.73328 12.5561 4.31923 12.6466 4.95997C12.8154 6.24006 13.1286 7.49694 13.58 8.70663C13.7593 9.18387 13.7982 9.70252 13.6918 10.2011C13.5855 10.6998 13.3384 11.1574 12.98 11.52L11.2866 13.2133C13.1847 16.5514 15.9486 19.3152 19.2866 21.2133L20.98 19.52C21.3425 19.1615 21.8002 18.9144 22.2988 18.8081C22.7974 18.7018 23.3161 18.7406 23.7933 18.92C25.003 19.3714 26.2599 19.6845 27.54 19.8533C28.1876 19.9447 28.7792 20.2709 29.202 20.77C29.6248 21.269 29.8495 21.9061 29.8333 22.56Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <a target="_blank" href="tel:+37447823628">+374 77 00 00 00</a>
+          <span>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.6666 10.6667H13.3333C11.8605 10.6667 10.6666 11.8607 10.6666 13.3334V26.6667C10.6666 28.1395 11.8605 29.3334 13.3333 29.3334H26.6666C28.1394 29.3334 29.3333 28.1395 29.3333 26.6667V13.3334C29.3333 11.8607 28.1394 10.6667 26.6666 10.6667Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5.33329 21.3334C3.86663 21.3334 2.66663 20.1334 2.66663 18.6667V5.33341C2.66663 3.86675 3.86663 2.66675 5.33329 2.66675H18.6666C20.1333 2.66675 21.3333 3.86675 21.3333 5.33341"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="reach-user flex">
+        <span>You may also find me on these platforms!</span>
+        <div class="another-links">
+          <a target="_blank" href="https://github.com/">
+            <svg class="icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 28V24C21.1392 22.7473 20.78 21.4901 20 20.5C23 20.5 26 18.5 26 15C26.08 13.75 25.73 12.52 25 11.5C25.28 10.35 25.28 9.15 25 8C25 8 24 8 22 9.5C19.36 9 16.64 9 14 9.5C12 8 11 8 11 8C10.7 9.15 10.7 10.35 11 11.5C10.2719 12.5159 9.91851 13.7528 10 15C10 18.5 13 20.5 16 20.5C15.61 20.99 15.32 21.55 15.15 22.15C14.98 22.75 14.93 23.38 15 24V28"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M15 24C10.49 26 10 22 8 22" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a target="_blank" href="https://x.com/">
+            <svg class="icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28 10C28 10 27.3 12.1 26 13.4C27.6 23.4 16.6 30.7 8 25C10.2 25.1 12.4 24.4 14 23C9 21.5 6.5 15.6 9 11C11.2 13.6 14.6 15.1 18 15C17.1 10.8 22 8.40002 25 11.2C26.1 11.2 28 10 28 10Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.figma.com/">
+            <svg class="icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 11.5C11 10.5717 11.3687 9.6815 12.0251 9.02513C12.6815 8.36875 13.5717 8 14.5 8H18V15H14.5C13.5717 15 12.6815 14.6313 12.0251 13.9749C11.3687 13.3185 11 12.4283 11 11.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M18 8H21.5C21.9596 8 22.4148 8.09053 22.8394 8.26642C23.264 8.44231 23.6499 8.70012 23.9749 9.02513C24.2999 9.35013 24.5577 9.73597 24.7336 10.1606C24.9095 10.5852 25 11.0404 25 11.5C25 11.9596 24.9095 12.4148 24.7336 12.8394C24.5577 13.264 24.2999 13.6499 23.9749 13.9749C23.6499 14.2999 23.264 14.5577 22.8394 14.7336C22.4148 14.9095 21.9596 15 21.5 15H18V8Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M18 18.5C18 18.0404 18.0905 17.5852 18.2664 17.1606C18.4423 16.736 18.7001 16.3501 19.0251 16.0251C19.3501 15.7001 19.736 15.4423 20.1606 15.2664C20.5852 15.0905 21.0404 15 21.5 15C21.9596 15 22.4148 15.0905 22.8394 15.2664C23.264 15.4423 23.6499 15.7001 23.9749 16.0251C24.2999 16.3501 24.5577 16.736 24.7336 17.1606C24.9095 17.5852 25 18.0404 25 18.5C25 18.9596 24.9095 19.4148 24.7336 19.8394C24.5577 20.264 24.2999 20.6499 23.9749 20.9749C23.6499 21.2999 23.264 21.5577 22.8394 21.7336C22.4148 21.9095 21.9596 22 21.5 22C21.0404 22 20.5852 21.9095 20.1606 21.7336C19.736 21.5577 19.3501 21.2999 19.0251 20.9749C18.7001 20.6499 18.4423 20.264 18.2664 19.8394C18.0905 19.4148 18 18.9596 18 18.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M11 25.5C11 24.5717 11.3687 23.6815 12.0251 23.0251C12.6815 22.3687 13.5717 22 14.5 22H18V25.5C18 26.4283 17.6313 27.3185 16.9749 27.9749C16.3185 28.6313 15.4283 29 14.5 29C13.5717 29 12.6815 28.6313 12.0251 27.9749C11.3687 27.3185 11 26.4283 11 25.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M11 18.5C11 17.5717 11.3687 16.6815 12.0251 16.0251C12.6815 15.3687 13.5717 15 14.5 15H18V22H14.5C13.5717 22 12.6815 21.6313 12.0251 20.9749C11.3687 20.3185 11 19.4283 11 18.5Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <span> &copy; 2024 | <a href="#">Designed</a> and <a href="#">coded</a> with <span class="heart">❤️</span> by Simonyan </span>
     </footer>
+    <script src="main.js" defer></script>
   </body>
 </html>
